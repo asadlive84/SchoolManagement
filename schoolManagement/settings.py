@@ -121,5 +121,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# msg_project/settings.py
+LOGIN_REDIRECT_URL = '/accounts/profile/'
+LOGOUT_REDIRECT_URL = '/users/login/'
+
 
 AUTH_USER_MODEL = 'users.CustomUser'
