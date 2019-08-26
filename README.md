@@ -1,5 +1,5 @@
 # School Management
-###Python3, Django web application
+### Python3, Django web application
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 
