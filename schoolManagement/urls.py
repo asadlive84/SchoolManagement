@@ -22,6 +22,7 @@ urlpatterns = [
     path('accounts/profile/', ProfilePage.as_view(template_name = 'users/profile.html'), name="profile_page"),
     path('users/', include('users.urls')),
     path('users/', include('django.contrib.auth.urls')),
+    path('accounts/', include('officeaccounts.urls')),
 ]
 
 if settings.DEBUG:

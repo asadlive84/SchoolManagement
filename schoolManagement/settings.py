@@ -35,8 +35,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users.apps.UsersConfig',
-    'debug_toolbar',
+    'users.apps.UsersConfig', # User App
+    'debug_toolbar', #debug toolbar
+    'officeaccounts.apps.OfficeaccountsConfig', #Office accounts App
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -104,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Dhaka'
 
 USE_I18N = True
 
@@ -123,7 +125,10 @@ LOGOUT_REDIRECT_URL = '/users/login/'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 INTERNAL_IPS = [
     # ...
