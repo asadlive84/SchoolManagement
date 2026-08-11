@@ -1,3 +1,5 @@
+
+
 # School Management
 ### Python3, Django web application
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
@@ -26,18 +28,12 @@ School Management requires [Python](https://www.python.org/downloads/) v3.6  and
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-$ pip3 install requirements.txt
+$ pip3 install -r requirements.txt
 $ python3 manage.py runserver
 ```
-
 
 
 
 ### Development
 
 Want to contribute? Great!
-
-
-
-
-
